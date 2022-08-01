@@ -1,0 +1,7 @@
+name: 'Sample composite run step actions'
+description: 'dependencies install step'
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo composite run!
