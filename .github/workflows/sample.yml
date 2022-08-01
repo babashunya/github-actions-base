@@ -1,18 +1,16 @@
-# workflowの名前
 name: Sample actions
 
-# トリガーの設定
 on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest # 実行環境の設定
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Run a one-line script
-        run: echo Hello, world! # Hello, world!と出力する
+        run: echo Hello, world!
 
       - name: Sample composite run step actions
         uses: ./.github/actions/sample
